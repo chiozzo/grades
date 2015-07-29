@@ -3,7 +3,7 @@ var scores = [75, 52, 76, 89, 98, 100, 63, 72, 59, 95];
 
 // Create and array of standard letter grades
 var letter_grades_counts = [0, 0, 0, 0, 0];
-var letter_grades = ["A", "B", "C", "D", "F"]
+var letter_grades = ["A", "B", "C", "D", "F"];
 
 // Create global variables for grade comparisons
 var lowest_score = scores[0];
@@ -42,7 +42,13 @@ var highest_grade = document.getElementById("highest-grade");
 // Return count of letter grades to DOM
 var output = ""
 for (var i = 0; i < letter_grades_counts.length; i++) {
-  output += "<div>There are " + letter_grades_counts[i] + " " + letter_grades[i];
+  output += "<div>There ";
+  if (letter_grades_counts[i] > 1) {
+    output += "are ";
+  } else {
+    output += "is ";
+  }
+  output += letter_grades_counts[i] + " " + letter_grades[i];
   if (letter_grades_counts[i] > 1) {
     output += "'s</div>";
   } else {
