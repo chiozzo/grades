@@ -1,6 +1,6 @@
 // Create an array of student scores and standard letter grades
 var scores = [75, 52, 76, 89, 98, 100, 63, 72, 59, 95];
-var letter_grades = [A, B, C, D, F]
+// var letter_grades = [A, B, C, D, F]
 
 // Create a way to track the count of each grade
 var countA = 0;
@@ -46,16 +46,16 @@ console.log("There are", countF, "F's");
 console.log("The lowest score was", lowest_score);
 console.log("The highest score was", highest_score);
 
-// Create global variables for DOM elements
+// Create global variables for references to DOM elements
 var grade_totals = document.getElementById("grade-totals");
 var lowest_grade = document.getElementById("lowest-grade");
 var highest_grade = document.getElementById("highest-grade");
 
 // Return count of letter grades to DOM
 
-for (var i = 0; i < letter_grades.length; i++) {
-  grade_totals.innerHTML = "<div>There are " +  +  + "'s</div>"
-}
+// for (var i = 0; i < letter_grades.length; i++) {
+//   grade_totals.innerHTML = "<div>There are " +  +  + "'s</div>"
+// }
 
 lowest_grade.innerHTML = "<div>" + lowest_score + "</div>";
 highest_grade.innerHTML = "<div>" + highest_score + "</div>";
