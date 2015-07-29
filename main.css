@@ -1,0 +1,17 @@
+/** {
+  border: 1px dashed red;
+}*/
+
+#grade-totals {
+  color: blue;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#lowest-grade {
+  color: red;
+}
+
+#highest-grade {
+  color: green;
+}
